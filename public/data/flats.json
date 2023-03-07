@@ -1,0 +1,52 @@
+
+	 [
+		{
+			"id": 1,
+			"title": "Bel appartment t4 pres de Lyon 2eme",
+			"description": "lorez,f,vfbv,gfb,kgofb,gbjgibnjnbhnjnhjnhnhn,hhn,",
+			"price": 800,
+			"open": false, 
+			"image": "../assets/interior.jpg"
+		},
+		{
+			"id": 2,
+			"title": "Bel appartment t4 pres de Lyon 2eme",
+			"description": "lorez,f,vfbv,gfb,kgofb,gbjgibnjnbhnjnhjnhnhn,hhn,",
+			"price": 200,
+			"open": false,
+			"image": "../assets/interior.jpg"
+		},
+		{
+			"id": 3,
+			"title": "Bel appartment t4 pres de Lyon 2eme",
+			"description": "lorez,f,vfbv,gfb,kgofb,gbjgibnjnbhnjnhjnhnhn,hhn,",
+			"price": 400,
+			"open": false,
+			"image": "../assets/interior.jpg"
+		},
+		{
+			"id": 4,
+			"title": "Bel appartment t4 pres de Lyon 2eme",
+			"description": "lorez,f,vfbv,gfb,kgofb,gbjgibnjnbhnjnhjnhnhn,hhn,",
+			"price": 400,
+			"open": false,
+			"image": "../assets/interior.jpg"
+		},
+		{
+			"id": 5,
+			"title": "Bel appartment t4 pres de Lyon 2eme",
+			"description": "",
+			"price": 400,
+			"open": false,
+			"image": "../assets/interior.jpg"
+		},
+		{
+			"id": 6,
+			"title": "Bel appartment t4 pres de Lyon 2eme",
+			"desription": "",
+			"price": 400,
+			"open": false,
+			"image": "../assets/interior.jpg"
+		}
+
+	]
