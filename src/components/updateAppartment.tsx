@@ -3,13 +3,8 @@ import { AppartmentContext } from '../context/appartmentsList'
 import { useContext, useState } from 'react'
 
 export default function UdpateAppartment() {
-  const {
-    openEdit,
-    setOpenEdit,
-    selectedAppartment,
-    sumbitNewData,
-  } = useContext(AppartmentContext) as AppartmentContextType
-
+   // Using Values from context state
+  const { openEdit, setOpenEdit, selectedAppartment, sumbitNewData} = useContext(AppartmentContext) as AppartmentContextType
 
   let appartmentData
 

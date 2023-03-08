@@ -3,9 +3,9 @@ import { AppartmentContext } from '../context/appartmentsList'
 import { AppartmentContextType, Appartment } from '../@types/appartment'
 
 export default function AppartmentCard(props: Appartment) {
-  const { removeAppartment, editAppartment } = useContext(
-    AppartmentContext,
-  ) as AppartmentContextType
+
+  // Using Values from context state
+  const { removeAppartment, editAppartment } = useContext( AppartmentContext) as AppartmentContextType
 
   return (
     <div className="relative box-border w-[30rem] mr-8 mb-8 bg-gray-700 rounded-xl flex flex-col justify-between items-baseline shadow-xl cursor-pointer">

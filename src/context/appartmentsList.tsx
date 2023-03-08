@@ -1,26 +1,26 @@
 import axios from 'axios'
 import { createContext, ReactElement, useEffect, useState } from 'react'
-
 import { Appartment, AppartmentContextType } from '../@types/appartment'
 
 export const AppartmentContext = createContext<AppartmentContextType | null>(
   null,
 )
 
+// Setting up children components where the context data could be shared
 type ChildrenType = { children?: ReactElement | ReactElement[] }
 
+
+// Getting the local storage data if any
 const getTheLocalStroage = () => {
   return localStorage.getItem('apts')
     ? JSON.parse(localStorage.getItem('apts') as string)
     : []
 }
 
-export const AppartmentListProvider = ({
-  children,
-}: ChildrenType): ReactElement => {
-  const [appartments, setAppartments] = useState<Appartment[]>(
-    getTheLocalStroage()
-  )
+export const AppartmentListProvider = ({children,}: ChildrenType): ReactElement => {
+
+  // Defining the inital states
+  const [appartments, setAppartments] = useState<Appartment[]>(getTheLocalStroage())
   const [openEdit, setOpenEdit] = useState<boolean>(false)
   const [selectedAppartment, setSelectedAppartment] = useState<Appartment[]>([])
 
@@ -30,14 +30,11 @@ export const AppartmentListProvider = ({
       const res = await axios.get('data/flats.json')
 
       localStorage.setItem('apts', JSON.stringify(res.data))
-
-
     }
     fetchApts()
   }, [appartments])
 
-
-
+// Adding a new item
   const addApartment = (appartment: Appartment) => {
     const newData: Appartment = {
       id: appartments.length + 1,
@@ -50,6 +47,8 @@ export const AppartmentListProvider = ({
     setAppartments([...appartments, newData])
   }
 
+  // Removing item fro the list
+
   const removeAppartment = (appartmentToRemove: Appartment) => {
     const filteredArray = appartments.filter(
       (item: Appartment) => item.id !== appartmentToRemove.id,
@@ -58,9 +57,7 @@ export const AppartmentListProvider = ({
 
   }
 
-  useEffect(() => {
-    localStorage.setItem('apts', JSON.stringify(appartments))
-  }, [appartments])
+// Selecting item to edit
 
   const editAppartment = (appartmentToEdit: Appartment) => {
     appartments.find((item: Appartment) => {
@@ -81,6 +78,7 @@ export const AppartmentListProvider = ({
 
     setAppartments(appartments)
   }
+// Updating the needed item
 
   const sumbitNewData = (appartmentData: Appartment) => {
     console.log(appartmentData.id)
@@ -104,6 +102,7 @@ export const AppartmentListProvider = ({
     setAppartments(newList)
   }
 
+  // Passing in the values to be shared among components
   return (
     <AppartmentContext.Provider
       value={{

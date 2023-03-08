@@ -9,9 +9,7 @@ export default function AppartmentList() {
   const { appartments } = useContext(AppartmentContext) as AppartmentContextType
   const [toggleForm, setToggleFrom] = useState(false)
 
-
-
-
+  // Handling the side bar for adding an item form
   const handleForm = () => {
     if (!toggleForm) {
       setToggleFrom(true)

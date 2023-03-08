@@ -3,10 +3,8 @@ import { AppartmentContext } from '../context/appartmentsList'
 import { AppartmentContextType, Appartment } from '../@types/appartment'
 
 export default function FormPattern() {
-  const { addApartment } = useContext(
-    AppartmentContext,
-  ) as AppartmentContextType
-
+   // Using Values from context state
+  const { addApartment } = useContext(AppartmentContext ) as AppartmentContextType
   const [formData, setFormData] = useState<Appartment | {}>()
 
   const handleForm = (e: React.FormEvent<HTMLInputElement>): void => {
@@ -22,8 +20,6 @@ export default function FormPattern() {
     if(formData){
       addApartment(formData)
     }
-
-
   }
 
   return (

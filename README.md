@@ -12,7 +12,7 @@ Make sure you have the followoing installed
 
 ### Installation
 
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
+
 
 1. Clone the repo
    ```sh
@@ -22,9 +22,6 @@ _Below is an example of how you can instruct your audience on installing and set
    ```sh
    npm install
    ```
-
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
@@ -40,5 +37,4 @@ _Below is an example of how you can instruct your audience on installing and set
 
 
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
