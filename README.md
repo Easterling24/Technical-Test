@@ -22,6 +22,10 @@ Make sure you have the followoing installed
    ```sh
    npm install
    ```
+3. Start the app
+   ```sh
+   npm start
+   ```
 
 
 
