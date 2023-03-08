@@ -19,8 +19,11 @@ export default function FormPattern() {
   const handleSubmit = (e: React.FormEvent, formData: Appartment | any) => {
     e.preventDefault()
 
-    addApartment(formData)
-    setFormData({})
+    if(formData){
+      addApartment(formData)
+    }
+
+
   }
 
   return (
@@ -31,7 +34,7 @@ export default function FormPattern() {
             className="block text-white text-sm font-bold mb-2"
             htmlFor="title"
           >
-            Ttire
+            Title
           </label>
           <input
             onChange={handleForm}
@@ -59,7 +62,7 @@ export default function FormPattern() {
             className="block text-white text-sm font-bold mb-2"
             htmlFor="price"
           >
-            Prix
+            Price
           </label>
           <input
             onChange={handleForm}
@@ -73,7 +76,7 @@ export default function FormPattern() {
           className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
           type="submit"
         >
-          Sauvegarder
+          Done !
         </button>
       </form>
     </div>

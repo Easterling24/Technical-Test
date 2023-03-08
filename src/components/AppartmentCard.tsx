@@ -3,20 +3,12 @@ import { AppartmentContext } from '../context/appartmentsList'
 import { AppartmentContextType, Appartment } from '../@types/appartment'
 
 export default function AppartmentCard(props: Appartment) {
-  const { appartments, removeAppartment, openAppartment } = useContext(
+  const { removeAppartment, editAppartment } = useContext(
     AppartmentContext,
   ) as AppartmentContextType
 
-
-
-  const openSideBarModal = () => {
-
-    
-  }
-
-
   return (
-    <div className="relative box-border w-96 mr-8 mb-2 bg-gray-700 rounded-xl flex flex-col justify-between items-baseline shadow-xl cursor-pointer">
+    <div className="relative box-border w-[30rem] mr-8 mb-8 bg-gray-700 rounded-xl flex flex-col justify-between items-baseline shadow-xl cursor-pointer">
       <div className="h-40 w-full rounded-xl ">
         <img
           className="object-cover w-full h-full rounded-xl"
@@ -25,15 +17,15 @@ export default function AppartmentCard(props: Appartment) {
         />
       </div>
 
-      <div className='p-6 text-teal-600 font-bold'>
-        <h1>{props.title}</h1>
-        <p>{props.description}</p>
-        <span>{props.price}</span>
+      <div className="p-6 font-bold w-full">
+        <h1 className="text-xl text-white mb-4">{props.title}</h1>
+        <div className="w-3/4 text-orange-600  ">{props.description}</div>
+        <span className="text-blue-600 h-5">{props.price}$/month</span>
       </div>
 
       <div className="flex justify-between items-center p-6">
         <button
-          onClick={() => removeAppartment(props.id)}
+          onClick={() => removeAppartment(props)}
           className="text-white bottom-2 w-10 h-10"
         >
           <svg
@@ -52,7 +44,7 @@ export default function AppartmentCard(props: Appartment) {
           </svg>
         </button>
         <button
-          onClick={() => openAppartment(props.id)}
+          onClick={() => editAppartment(props)}
           className="text-white bottom-2 right-2"
         >
           <svg

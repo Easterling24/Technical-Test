@@ -2,51 +2,44 @@
 	 [
 		{
 			"id": 1,
-			"title": "Bel appartment t4 pres de Lyon 2eme",
-			"description": "lorez,f,vfbv,gfb,kgofb,gbjgibnjnbhnjnhjnhnhn,hhn,",
+			"title": "Superb Loft In The Center Of Lausanne",
+			"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
 			"price": 800,
 			"open": false, 
 			"image": "../assets/interior.jpg"
 		},
 		{
 			"id": 2,
-			"title": "Bel appartment t4 pres de Lyon 2eme",
-			"description": "lorez,f,vfbv,gfb,kgofb,gbjgibnjnbhnjnhjnhnhn,hhn,",
+			"title": "Hotham 1 Bed Apartment",
+			"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
 			"price": 200,
 			"open": false,
-			"image": "../assets/interior.jpg"
+			"image": "../assets/interior2.jpg"
 		},
 		{
 			"id": 3,
-			"title": "Bel appartment t4 pres de Lyon 2eme",
-			"description": "lorez,f,vfbv,gfb,kgofb,gbjgibnjnbhnjnhjnhnhn,hhn,",
+			"title": "New! WalnutTree Double 12 Pers Apartment",
+			"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
 			"price": 400,
 			"open": false,
-			"image": "../assets/interior.jpg"
+			"image": "../assets/interior6.jpg"
 		},
 		{
 			"id": 4,
-			"title": "Bel appartment t4 pres de Lyon 2eme",
-			"description": "lorez,f,vfbv,gfb,kgofb,gbjgibnjnbhnjnhjnhnhn,hhn,",
+			"title": "Cozy apartment in Berlin",
+			"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
 			"price": 400,
 			"open": false,
-			"image": "../assets/interior.jpg"
+			"image": "../assets/interior4.jpg"
 		},
 		{
 			"id": 5,
-			"title": "Bel appartment t4 pres de Lyon 2eme",
-			"description": "",
+			"title": "Greenchalets Tuscany Viareggio",
+			"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
 			"price": 400,
 			"open": false,
-			"image": "../assets/interior.jpg"
-		},
-		{
-			"id": 6,
-			"title": "Bel appartment t4 pres de Lyon 2eme",
-			"desription": "",
-			"price": 400,
-			"open": false,
-			"image": "../assets/interior.jpg"
+			"image": "../assets/interior5.jpg"
 		}
+	
 
 	]

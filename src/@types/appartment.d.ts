@@ -1,19 +1,19 @@
 export interface Appartment {
-    id: number | unedefined,
-    title: string | undefined, 
-    description: string | undefined,
-    price: number | undefined,
-    open: boolean | undefined,
-    image: string | undefined
-
+  id: number
+  title: string
+  description: string
+  price: number
+  openEdit: boolean
+  image: string
 }
 
 export type AppartmentContextType = {
-    appartments: Appartment[];
-    addApartment: (newAppartment: Appartment) => void
-    removeAppartment: (id:number) => void
-    openAppartment : (id:number) => void
-    // updateAppartment: (id:number) => void
-
+  appartments: Appartment[]
+  openEdit:boolean,
+  addApartment: (newAppartment: Appartment) => void
+  removeAppartment: (appartmentToRemove: Appartment) => void
+  editAppartment: (appartmentToEdit: Appartment) => void
+  sumbitNewData: (appartmentData: Appartment) => void
+  setOpenEdit:(boolean) => void
+  selectedAppartment: Appartment[]
 }
-

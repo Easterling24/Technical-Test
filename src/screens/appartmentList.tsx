@@ -23,7 +23,7 @@ export default function AppartmentList() {
   return (
     <div className="container my-10 mx-auto">
       <h1 className="mb-10 text-white text-center text-4xl">
-        Ma liste d'appartments
+        My Appartment List
       </h1>
       <button
         onClick={handleForm}
@@ -34,10 +34,10 @@ export default function AppartmentList() {
             : 'opacity-100 focus:outline-none text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-6 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800'
         }
       >
-        Ouvrir le formulaire d'ajout
+        Open the fill-out form
       </button>
 
-      <UdpateAppartment />
+      <UdpateAppartment/>
 
       <aside
         className={
@@ -49,7 +49,7 @@ export default function AppartmentList() {
         <div className="flex relative flex-col justify-start">
           {' '}
           <h1 className="text-white text-4xl text-center">
-            Ajouter un nouvel appartment
+            Add my next place to stay
           </h1>
           <button onClick={handleForm} className="absolute bottom-5 ">
             <svg
@@ -72,7 +72,7 @@ export default function AppartmentList() {
       </aside>
 
       {appartments && appartments.length ? (
-        <div className="grid grid-cols-1 gap-y-10 gap-x-8 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 xl:gap-x-14">
+        <div  className ='flex flex-wrap'>
           {appartments.map((elt) => {
             return (
               <AppartmentCard
@@ -81,14 +81,15 @@ export default function AppartmentList() {
                 title={elt.title}
                 description={elt.description}
                 price={elt.price}
-                open={elt.open}
+                openEdit={elt.openEdit}
                 image={elt.image}
+          
               />
             )
           })}
         </div>
       ) : (
-        <div>Ouups nothing here</div>
+        <div className='text-center mt-40 text-4xl text-white'>Ouups nothing here, add some new items in your list!</div>
       )}
     </div>
   )
